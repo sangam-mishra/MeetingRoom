@@ -1,0 +1,1 @@
+// MeetingType.java placeholder 

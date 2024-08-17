@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f2f1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f1bcb0;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header .user-profile {
+    display: flex;
+    align-items: center;
+}
+
+header .user-profile button {
+    margin-right: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff7b7b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.meetings {
+    width: 60%;
+}
+
+.meeting {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meeting-details {
+    width: 35%;
+    padding: 20px;
+}
+
+.time {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.organizer {
+    color: orange;
+    font-weight: bold;
+}
+
+.venue {
+    background-color: #fde3d0;
+    width: 65%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px; /* Adds rounded corners */
+    overflow: hidden; /* Ensures the image fits within the container */
+}
+
+.venue p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.venue .venue-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.venue img {
+    width: 250px; /* Increased the size of the image */
+    height: auto;
+    border-radius: 10px; /* Ensures the image has rounded corners */
+}
+
+.meeting-room {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meeting-room img {
+    width: 80%;
+    border-radius: 50%;
+}

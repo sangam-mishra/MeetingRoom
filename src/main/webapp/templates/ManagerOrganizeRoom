@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Room Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="HSBC Logo">
+    </div>
+    <div class="header-right">
+        <button class="button" style="color:#FF6B00">Organize Meeting</button>
+        <button class="button"style="color:#FF6B00">See Users</button>
+        <span class="user-icon">&#128100;</span>
+    </div>
+</header>
+
+<div class="content">
+    <div class="available-rooms">
+        <h2 style="text-align: center">Available Rooms</h2>
+        <div class="available-rooms-container">
+            <div class="room-box">
+                <h3>Room Name: Conference Room 1</h3>
+                <p>Location: P1 Floor</p>
+                <p>Capacity: 10 people</p>
+                <p>Amenities: White Board, Projector, WiFi, TV, Conference Call Facility</p>
+                <button>Select</button>
+            </div>
+            <div class="room-box">
+                <h3>Room Name: Conference Room 2</h3>
+                <p>Location: 3rd Floor</p>
+                <p>Capacity: 5 people</p>
+                <p>Amenities: White Board, WiFi, Conference Call Facility</p>
+                <button>Select</button>
+            </div>
+            <div class="room-box">
+                <h3>Room Name: Meeting Room 4</h3>
+                <p>Location: P2 Floor</p>
+                <p>Capacity: 10 people</p>
+                <p>Amenities: White Board, Projector, TV, WiFi, Conference Call Facility</p>
+                <button>Select</button>
+            </div>
+            <div class="room-box">
+                <h3>Room Name: Tech Room</h3>
+                <p>Location: P1 Floor</p>
+                <p>Capacity: 15 people</p>
+                <p>Amenities: White Board, Projector, WiFi, TV, Coffee Machine, Conference Call Facility</p>
+                <button>Select</button>
+            </div>
+        </div>
+    </div>
+     <div class="divider"></div>
+    <div class="booking-section">
+        <h2 class="Requirement" style="font-size: 23px">Enter Your Requirement</h2>
+        <label for="capacity" style="font-weight: bold">Capacity:</label>
+        <input type="number" id="capacity" min="1"><br><br>
+
+        <label for="time-slot" style="font-weight: bold">Time Slot:</label>
+        <input type="text" id="time-slot"><br><br>
+
+        <!-- Update the amenities section in your HTML -->
+        <!-- Update the amenities section in your HTML -->
+        <div class="amenities-container">
+            <h4>Amenities:</h4>
+            <div class="amenities">
+                <input type="checkbox" id="whiteboard" value="5">
+                <label for="whiteboard"><span>White Board</span></label>
+
+                <input type="checkbox" id="projector" value="5">
+                <label for="projector"><span>Projector</span></label>
+
+                <input type="checkbox" id="wifi" value="10">
+                <label for="wifi"><span>WiFi</span></label>
+
+                <input type="checkbox" id="conference-call" value="15">
+                <label for="conference-call"><span>Conference Call Facility</span></label>
+
+                <input type="checkbox" id="water-dispenser" value="5">
+                <label for="water-dispenser"><span>Water Dispenser</span></label>
+
+                <input type="checkbox" id="tv" value="10">
+                <label for="tv"><span>TV</span></label>
+
+                <input type="checkbox" id="coffee-machine" value="10">
+                <label for="coffee-machine"><span>Coffee Machine</span></label>
+            </div>
+        </div>
+
+
+
+        <div class="total-cost">
+            Total Credit Cost: <span id="cost">0</span> credits
+            <p id="remaining-credits-note" class="remaining-credits-note"></p>
+            <div class="credit-line-container">
+                <div id="credit-line"></div>
+            </div>
+        </div>
+
+        <div class="button-container">
+        <button id="book-room">Book Room</button>
+    </div>
+    </div>
+
+</div></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!--        <div class="enter-requirement">-->
+<!--            <h2>Enter Your Requirement</h2>-->
+<!--            <div class="requirement-form">-->
+<!--                &lt;!&ndash; Form content &ndash;&gt;-->
+<!--                <label for="capacity">Capacity:</label>-->
+<!--                <input type="number" id="capacity" name="capacity">-->
+
+<!--                <label for="time-slot">Time Slot:</label>-->
+<!--                <input type="text" id="time-slot" name="time-slot">-->
+
+<!--                <p>Amenities:</p>-->
+<!--                <div class="amenities-checkbox">-->
+<!--                    <label><input type="checkbox" value="5"> White Board</label>-->
+<!--                    <label><input type="checkbox" value="5"> Water Dispenser</label>-->
+<!--                    <label><input type="checkbox" value="10"> TV</label>-->
+<!--                    <label><input type="checkbox" value="10"> Coffee Machine</label>-->
+<!--                    <label><input type="checkbox" value="5"> Projector</label>-->
+<!--                    <label><input type="checkbox" value="10"> WiFi</label>-->
+<!--                    <label><input type="checkbox" value="15"> Conference Call Facility</label>-->
+<!--                </div>-->
+
+<!--                <div class="total-credit-cost">-->
+<!--                    Total Credit Cost: <span id="credit-cost">0</span> credits-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <button class="book-room">Book Room</button>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script src="script.js"></script>-->
+<!--</body>-->
+<!--</html>-->

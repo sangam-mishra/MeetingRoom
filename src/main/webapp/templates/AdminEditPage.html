@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager's Dashboard</title>
+    <link rel="stylesheet" href="../static/css/style1.css">
+    <link rel="stylesheet" href="../static/css/Footer.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/images/logo.png" alt="HSBC Logo">
+            <span><h5>Meeting Room Booking System</h5></span>
+        </div>
+        <nav class="top-nav">
+            <button class="top-button" onclick="window.location.href='#'">Create Meeting Rooms</button>
+            <button class="top-button" onclick="window.location.href='#'">Edit Rooms</button>
+            <button class="top-button" onclick="window.location.href='#'">See Users</button>
+            <div class="profile-icon">
+                <img src="../static/images/user-icon.png" alt="Profile Icon">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="room-list">
+            <div class="room-card booked-room">
+                <div class="room-details">
+                    <p><strong>Room Name :</strong> Conference Room 1</p>
+                    <p><strong>Location :</strong> P1 Floor</p>
+                    <p><strong>Capacity :</strong> 10 people</p>
+                    <p><strong>Amenities :</strong></p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="amenities1" checked>
+                            <label style="color: black;">White Board</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities1">
+                            <label style="color: white;">Projector</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities1">
+                            <label style="color: white;">Water Dispenser</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities1" checked>
+                            <label style="color: black;">Wifi</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities1">
+                            <label style="color: white;">TV</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities1">
+                            <label style="color: white;">Conference Call Facility</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities1" checked>
+                            <label style="color: black;">Coffee Machine</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="room-card booked-room">
+                <div class="room-details">
+                    <p><strong>Room Name :</strong> Conference Room 2</p>
+                    <p><strong>Location :</strong> 3rd Floor</p>
+                    <p><strong>Capacity :</strong> 5 people</p>
+                    <p><strong>Amenities :</strong></p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="amenities2">
+                            <label style="color: white;">White Board</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities2" checked>
+                            <label style="color: black;">Projector</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities2">
+                            <label style="color: white;">Water Dispenser</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities2" checked>
+                            <label style="color: black;">Wifi</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities2" checked>
+                            <label style="color: black;">TV</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities2">
+                            <label style="color: white;">Conference Call Facility</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities2">
+                            <label style="color: white;">Coffee Machine</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="room-card booked-room">
+                <div class="room-details">
+                    <p><strong>Room Name :</strong> Meeting Room 4</p>
+                    <p><strong>Location :</strong> P2 Floor</p>
+                    <p><strong>Capacity :</strong> 10 people</p>
+                    <p><strong>Amenities :</strong></p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="amenities3" checked>
+                            <label style="color: black;">White Board</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities3" checked>
+                            <label style="color: black;">Projector</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities3">
+                            <label style="color: white;">Water Dispenser</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities3">
+                            <label style="color: white;">Wifi</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities3">
+                            <label style="color: white;">TV</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities3" checked>
+                            <label style="color: black;">Conference Call Facility</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities3">
+                            <label style="color: white;">Coffee Machine</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+            <div class="room-card booked-room">
+                <div class="room-details">
+                    <p><strong>Room Name :</strong> Tech Room</p>
+                    <p><strong>Location :</strong> P1 Floor</p>
+                    <p><strong>Capacity :</strong> 15 people</p>
+                    <p><strong>Amenities :</strong></p>
+                    <ul>
+                        <li>
+                            <input type="radio" name="amenities4">
+                            <label style="color: white;">White Board</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities4">
+                            <label style="color: white;">Projector</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities4" checked>
+                            <label style="color: black;">Water Dispenser</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities4" checked>
+                            <label style="color: black;">Wifi</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities4" checked>
+                            <label style="color: black;">TV</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities4">
+                            <label style="color: white;">Conference Call Facility</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="amenities4" checked>
+                            <label style="color: black;">Coffee Machine</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="select-button">Select</button>
+            </div>
+        </div>
+
+        <div class="vertical-line"></div>
+
+    </body>
+</html>

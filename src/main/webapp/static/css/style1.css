@@ -1,4 +1,5 @@
 
+@import url('styles.css');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -191,4 +192,118 @@ main {
     width: 250px;
     height: auto;
     border-radius: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.title {
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.user-icon img {
+    height: 40px;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.room-card {
+    background-color: #fde3d0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.room-card .room-details {
+    margin-bottom: 10px;
+}
+
+.room-card .select-button {
+    background-color: #fde3d0;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.vertical-line {
+    border-left: 1px solid #ccc;
+    height: 100%;
+}
+
+.edit-room {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.edit-room form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-room form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-room form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.edit-room-button {
+    background-color: #fde3d0;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
 }

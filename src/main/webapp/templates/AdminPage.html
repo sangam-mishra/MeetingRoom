@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - Meeting Room Booking System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* Inline style to immediately add space above navbar */
+        body {
+            padding-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Dynamic Background Elements -->
+    <div class="background">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="../static/images/logo1.png" alt="HSBC Logo" width="120">
+            Meeting Room Booking System
+        </a>
+        <div class="ml-auto">
+            <button class="btn btn-warning mx-2" onclick="createRoom()">Create Meeting Room</button>
+            <button class="btn btn-warning mx-2" onclick="editRooms()">Edit Rooms</button>
+            <button class="btn btn-warning mx-2" onclick="seeUsers()">See Users</button>
+            <button class="btn btn-outline-dark mx-2">
+                <i class="fas fa-user-circle"></i>
+            </button>
+            
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 position-relative">
+                <div class="tilted-square">
+                    <img src="../static/images/admin.jpg" alt="Admin Page Image" class="img-fluid admin-image">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="welcome-text">WELCOME, Admin!</h1>
+                <p>Manage Meeting Rooms with Ease</p>
+                <p>As an administrator, you have full control over the meeting rooms within HSBC Technology. This platform allows you to efficiently manage the availability, configuration, and details of each meeting room.</p>
+                <h4>What you can do:</h4>
+                <ul>
+                    <li><strong>Create New Rooms:</strong> Add new meeting rooms to the system with essential details like room name, capacity, location, and available amenities.</li>
+                    <li><strong>Edit Existing Rooms:</strong> Modify the details of existing meeting rooms to reflect changes in capacity, amenities, or other configurations.</li>
+                    <li><strong>Monitor Room Availability:</strong> Get an overview of the current status of all meeting rooms, including upcoming bookings and any maintenance schedules.</li>
+                    <li><strong>Ensure Efficient Utilization:</strong> Make sure all rooms are properly utilized by adjusting settings, removing unused rooms, and optimizing space allocation.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../static/js/scripts.js"></script>
+</body>
+
+</html>

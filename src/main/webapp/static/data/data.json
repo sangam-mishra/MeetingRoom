@@ -1,0 +1,39 @@
+{
+  "meetings": [
+    {
+      "date": "Today",
+      "time": "04:00 → 04:30 PM",
+      "organizer": "Mrigank Shekhar",
+      "venue": "Projector Room",
+      "location": "3rd Floor"
+    },
+    {
+      "date": "Today",
+      "time": "05:00 → 05:30 PM",
+      "organizer": "John Doe",
+      "venue": "Conference Room",
+      "location": "2nd Floor"
+    },
+    {
+      "date": "Tomorrow",
+      "time": "10:00 → 11:00 AM",
+      "organizer": "Jane Smith",
+      "venue": "Conference Room P1 Floor",
+      "location": "1st Floor"
+    },
+    {
+      "date": "Tomorrow",
+      "time": "04:00 → 04:30 PM",
+      "organizer": "Mrigank Shekhar",
+      "venue": "Projector Room",
+      "location": "3rd Floor"
+    },
+    {
+      "date": "Tomorrow",
+      "time": "05:00 → 05:30 PM",
+      "organizer": "John Doe",
+      "venue": "Conference Room",
+      "location": "2nd Floor"
+    }
+  ]
+}

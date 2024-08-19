@@ -1,4 +1,4 @@
-package com.company.model;
+package com.meetingroom.model;
 
 public class User {
     private String name;

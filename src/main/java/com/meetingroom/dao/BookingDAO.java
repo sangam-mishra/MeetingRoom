@@ -1,6 +1,6 @@
-package com.company.dao;
+package com.meetingroom.dao;
 
-import com.company.model.Booking;
+import com.meetingroom.model.Booking;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package com.company.service;
+package com.meetingroom.service;
 
-import com.company.dao.BookingDAO;
-import com.company.model.Booking;
-import com.company.model.User;
+import com.meetingroom.dao.BookingDAO;
+import com.meetingroom.model.Booking;
+import com.meetingroom.model.User;
 
 import java.util.List;
 

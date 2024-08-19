@@ -1,4 +1,4 @@
-package com.company.model;
+package com.meetingroom.model;
 
 import java.util.List;
 

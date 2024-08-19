@@ -1,6 +1,6 @@
-package com.company.dao;
+package com.meetingroom.dao;
 
-import com.company.model.User;
+import com.meetingroom.model.User;
 
 import java.util.HashMap;
 import java.util.Map;

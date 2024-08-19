@@ -1,7 +1,8 @@
-package com.company.service;
+package com.meetingroom.service;
 
-import com.company.dao.RoomDAO;
-import com.company.model.MeetingRoom;
+import com.meetingroom.dao.RoomDAO;
+import com.meetingroom.model.MeetingRoom;
+
 
 import java.util.List;
 

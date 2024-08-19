@@ -1,7 +1,7 @@
-package com.company.service;
+package com.meetingroom.service;
 
-import com.company.dao.UserDAO;
-import com.company.model.User;
+import com.meetingroom.dao.UserDAO;
+import com.meetingroom.model.User;
 
 import java.util.Map;
 

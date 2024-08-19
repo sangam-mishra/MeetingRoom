@@ -1,4 +1,4 @@
-package com.company.model;
+package com.meetingroom.model;
 
 public enum Role {
     Admin, Manager, Member

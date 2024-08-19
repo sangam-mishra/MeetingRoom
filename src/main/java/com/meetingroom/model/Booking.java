@@ -1,4 +1,4 @@
-package com.company.model;
+package com.meetingroom.model;
 
 import java.time.LocalDateTime;
 
@@ -16,8 +16,6 @@ public class Booking {
     }
 
     // Getters and Setters
-
-
     public User getUser() {
         return user;
     }

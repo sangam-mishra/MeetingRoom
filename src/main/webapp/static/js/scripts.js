@@ -9,7 +9,7 @@ function createRoom() {
 function editRooms() {
     alert("Redirect to Edit Rooms Page");
     // Here, you can redirect to the edit rooms page
-    window.location.href = 'editRooms.html';
+    window.location.href = 'AdminEditRoom.html';
 }
 
 function seeUsers() {

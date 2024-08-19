@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeting Room Booking System</title>
+    <link rel="stylesheet" href="../static/css/Footer.css" />
+    <link rel="stylesheet" href="../static/css/AdminCreateRoom.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../static/images/logo.png" alt="HSBC Logo" />
+        <span>Meeting Room Booking System</span>
+      </div>
+      <nav>
+        <button class="nav-btn">Create Meeting Room</button>
+        <button class="nav-btn">Edit Rooms</button>
+        <button class="nav-btn">See Users</button>
+        <div class="user-icon">
+          <img src="../static/images/user-icon.png" alt="User Icon" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="booking-form">
+      <div class="form-container">
+        <div class="form-group">
+          <label for="room-name">Room Name :</label>
+          <input type="text" id="room-name" placeholder="Enter room name" />
+        </div>
+        <div class="form-group">
+          <label for="location">Location :</label>
+          <input type="text" id="location" placeholder="Enter location" />
+        </div>
+        <div class="form-group">
+          <label for="capacity">Capacity :</label>
+          <input type="number" id="capacity" placeholder="Enter capacity" />
+        </div>
+
+        <div class="amenities">
+          <p>Amenities :</p>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> White Board</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> Projector</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> Water Dispenser</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> Wifi</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> Tv</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> Conference Call Facility</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+          <div class="amenities-group">
+            <label><input type="checkbox" /> Coffee Machine</label>
+            <input type="text" placeholder="Enter Credits" />
+          </div>
+        </div>
+
+        <button class="create-room-btn">Create Room</button>
+      </div>
+      <div class="notification">
+        <span>Room Created</span>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          <div class="tag">
+            <h2>Easily Find and Book the Most</h2>
+            <h2>Suitable Meeting Space</h2>
+          </div>
+
+          <div class="footer-contact">
+            <div class="footer-email">
+              <label>Email</label>
+              <p>help@hsbc.support.com</p>
+            </div>
+            <div class="footer-phone">
+              <label>Phone Number</label>
+              <p>+1 (201) 895-3801</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-buttons">
+          <button class="contact-btn">Contact Us</button>
+          <button class="demo-btn">Watch Demo</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 HSBC TECHNOLOGY | All rights reserved</p>
+        <ul class="footer-links">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".create-room-btn")
+        .addEventListener("click", function () {
+          // Example of how to show the notification when room is created
+          const notification = document.querySelector(".notification");
+          notification.style.display = "block";
+
+          setTimeout(() => {
+            notification.style.display = "none";
+          }, 3000); // Hide the notification after 3 seconds
+        });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const amenitiesGroups = document.querySelectorAll(".amenities-group");
+
+        amenitiesGroups.forEach((group) => {
+          const checkbox = group.querySelector('input[type="checkbox"]');
+          const textInput = group.querySelector('input[type="text"]');
+
+          // Initially disable the text input
+          textInput.disabled = true;
+
+          // Add event listener to enable/disable the text input based on checkbox
+          checkbox.addEventListener("change", function () {
+            if (checkbox.checked) {
+              textInput.disabled = false;
+              textInput.placeholder = "Enter Credits";
+            } else {
+              textInput.disabled = true;
+              textInput.placeholder = "";
+              textInput.value = ""; // Clear the value if unchecked
+            }
+          });
+        });
+
+        // Example of showing notification when room is created
+        document
+          .querySelector(".create-room-btn")
+          .addEventListener("click", function () {
+            const notification = document.querySelector(".notification");
+            notification.style.display = "block";
+
+            setTimeout(() => {
+              notification.style.display = "none";
+            }, 3000); // Hide the notification after 3 seconds
+          });
+      });
+    </script>
+  </body>
+</html>

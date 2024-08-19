@@ -35,19 +35,11 @@
         </button>
       </nav>
     </header>
-
     <main>
       <section class="manager-welcome">
-        <div class="manager-image">
-          <img
-            src="../static/images/pic_2_removebg_preview_1.png"
-            alt="Manager in a meeting"
-          />
-        </div>
-
-        <div class="manageWelcomeContainer">
-          <h1>WELCOME, Manager!</h1>
-          <p>Organize Meetings and Book Rooms Efficiently</p>
+        <h1>WELCOME, Manager!</h1>
+        <p>Organize Meetings and Book Rooms Efficiently</p>
+        <div class="manager-content">
           <div class="manager-description">
             <p>
               As a manager, you have the power to organize meetings and secure
@@ -77,118 +69,19 @@
               </li>
             </ul>
           </div>
-        </div>
-      </section>
-
-      <section class="meetings">
-        <h2>Your Scheduled Meetings</h2>
-
-        <hr class="custom-hr" />
-
-        <div class="meetings-container">
-          <div class="container">
-            <div class="meeting">
-              <div class="meeting-details">
-                <p><strong>Today</strong></p>
-
-                <p class="time">04:00 → 04:30 PM</p>
-
-                <p class="organizer">
-                  <strong>Organizer:</strong> Mrigank Shekhar
-                </p>
-              </div>
-
-              <div class="venue">
-                <div class="venue-details">
-                  <p><strong>Venue</strong></p>
-
-                  <p>Projector Room<br />3rd Floor</p>
-                </div>
-
-                <img
-                  src="../static/images/real_time_availabillity_image_3.png"
-                  alt="Projector Room"
-                />
-              </div>
-            </div>
-
-            <div class="meeting">
-              <div class="meeting-details">
-                <p><strong>Today</strong></p>
-
-                <p class="time">04:00 → 04:30 PM</p>
-
-                <p class="organizer">
-                  <strong>Organizer:</strong> Mrigank Shekhar
-                </p>
-              </div>
-
-              <div class="venue">
-                <div class="venue-details">
-                  <p><strong>Venue</strong></p>
-
-                  <p>Projector Room<br />3rd Floor</p>
-                </div>
-
-                <img
-                  src="../static/images/real_time_availabillity_image_3.png"
-                  alt="Projector Room"
-                />
-              </div>
-            </div>
-
-            <div class="meeting">
-              <div class="meeting-details">
-                <p><strong>Today</strong></p>
-
-                <p class="time">04:00 → 04:30 PM</p>
-
-                <p class="organizer">
-                  <strong>Organizer:</strong> Mrigank Shekhar
-                </p>
-              </div>
-
-              <div class="venue">
-                <div class="venue-details">
-                  <p><strong>Venue</strong></p>
-
-                  <p>Projector Room<br />3rd Floor</p>
-                </div>
-
-                <img
-                  src="../static/images/real_time_availabillity_image_3.png"
-                  alt="Projector Room"
-                />
-              </div>
-            </div>
-
-            <div class="meeting">
-              <div class="meeting-details">
-                <p><strong>Today</strong></p>
-
-                <p class="time">04:00 → 04:30 PM</p>
-
-                <p class="organizer">
-                  <strong>Organizer:</strong> Mrigank Shekhar
-                </p>
-              </div>
-
-              <div class="venue">
-                <div class="venue-details">
-                  <p><strong>Venue</strong></p>
-
-                  <p>Projector Room<br />3rd Floor</p>
-                </div>
-
-                <img
-                  src="../static/images/real_time_availabillity_image_3.png"
-                  alt="Projector Room"
-                />
-              </div>
-            </div>
+          <div class="manager-image">
+            <img
+              src="../static/images/pic_2_removebg_preview_1.png"
+              alt="Manager in a meeting"
+            />
           </div>
         </div>
       </section>
+
+      <h2>Your Scheduled Meetings</h2>
+
+      <hr class="custom-hr" />
+      <div class="meetings-container" id="meetings-container"></div>
     </main>
 
     <!-- Footer Section -->
@@ -225,5 +118,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="../static/js/meetings.js" defer></script>
   </body>
 </html>

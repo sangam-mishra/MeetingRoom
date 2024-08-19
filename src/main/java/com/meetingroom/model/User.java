@@ -4,15 +4,15 @@ public class User {
     private String name;
     private String email;
     private String phone;
-    private Role role; // "Admin", "Manager", "Member"
+    private Role role; // Admin, Manager, Member
     private int credits;
 
-    public User(String name, String email, String phone, Role role, int credits) {
+    public User(String name, String email, String phone, Role role) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.role = role;
-        this.credits = role.equals("Manager") ? 2000 : 0;
+        this.credits = (role == Role.MANAGER) ? 2000 : 0;
     }
 
     public String getName() {

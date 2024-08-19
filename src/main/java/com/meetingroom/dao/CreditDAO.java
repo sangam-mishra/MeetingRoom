@@ -4,7 +4,7 @@ import com.meetingroom.model.User;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UserDAO {
+public class CreditDAO {
     private Map<String, User> users = new HashMap<>();
 
     public void addUser(User user) {
@@ -17,5 +17,9 @@ public class UserDAO {
 
     public Map<String, User> getAllUsers() {
         return users;
+    }
+
+    public void updateUser(User user) {
+        users.put(user.getEmail(), user);
     }
 }

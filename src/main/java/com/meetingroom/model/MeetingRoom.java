@@ -1,14 +1,14 @@
 package com.meetingroom.model;
 
-import java.util.List;
+import java.util.Set;
 
 public class MeetingRoom {
     private String name;
     private int seatingCapacity;
-    private List<String> amenities;
+    private Set<Amenity> amenities;
     private int hourlyCost;
 
-    public MeetingRoom(String name, int seatingCapacity, List<String> amenities) {
+    public MeetingRoom(String name, int seatingCapacity, Set<Amenity> amenities) {
         this.name = name;
         this.seatingCapacity = seatingCapacity;
         this.amenities = amenities;
@@ -19,13 +19,9 @@ public class MeetingRoom {
         int cost = 0;
         if (seatingCapacity > 5 && seatingCapacity <= 10) cost += 10;
         if (seatingCapacity > 10) cost += 20;
-        if (amenities.contains("Projector")) cost += 5;
-        if (amenities.contains("WiFi Connection")) cost += 10;
-        if (amenities.contains("Conference call facility")) cost += 15;
-        if (amenities.contains("Whiteboard")) cost += 5;
-        if (amenities.contains("Water Dispenser")) cost += 5;
-        if (amenities.contains("TV")) cost += 10;
-        if (amenities.contains("Cofffe Machine")) cost += 10;
+        for (Amenity amenity : amenities) {
+            cost += amenity.getCost();
+        }
         return cost;
     }
 
@@ -45,11 +41,11 @@ public class MeetingRoom {
         this.seatingCapacity = seatingCapacity;
     }
 
-    public List<String> getAmenities() {
+    public Set<Amenity> getAmenities() {
         return amenities;
     }
 
-    public void setAmenities(List<String> amenities) {
+    public void setAmenities(Set<Amenity> amenities) {
         this.amenities = amenities;
     }
 

@@ -15,7 +15,6 @@ public class Booking {
         this.endTime = endTime;
     }
 
-    // Getters and Setters
     public User getUser() {
         return user;
     }

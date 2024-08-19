@@ -1,7 +1,6 @@
 package com.meetingroom.dao;
 
 import com.meetingroom.model.MeetingRoom;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -5,28 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49faf9e0-c481-4fc8-a488-1a7193130321" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/dao/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/dao/BookingDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/dao/RoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/dao/RoomDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Amenity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Amenity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/CreditManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/MeetingRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/MeetingRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/MeetingType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/MeetingType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/Schedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/CreditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/CreditService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/CreditService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/RoomService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/meetingroom/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/Profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/Profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,27 +41,30 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2kmSMMbwgEBxazRNpCDMMyB4akA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jaisi/IdeaProjects/hospitalmanagement",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/jaisi/IdeaProjects/AutomatedMeetingRoomBookingSystem/src/main/java/com/xion/meetingroom/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jaisi/IdeaProjects/hospitalmanagement&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/jaisi/IdeaProjects/AutomatedMeetingRoomBookingSystem/src/main/java/com/xion/meetingroom/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="MeetingRoom" />
@@ -90,11 +99,24 @@
       <workItem from="1723887213138" duration="5000" />
       <workItem from="1724089723920" duration="1553000" />
       <workItem from="1724091289610" duration="302000" />
+      <workItem from="1724091650758" duration="716000" />
+      <workItem from="1724092387262" duration="2432000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

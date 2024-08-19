@@ -281,7 +281,7 @@ main {
 .circle,
 .square {
   position: absolute;
-  background: rgba(248, 185, 69, 0.2); /* Light orange for background shapes */
+  background: rgba(252, 203, 113, 0.2); /* Light orange for background shapes */
 }
 
 .circle {

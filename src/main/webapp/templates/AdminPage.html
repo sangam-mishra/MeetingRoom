@@ -34,26 +34,33 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="../static/images/logo1.png" alt="HSBC Logo" width="120" />
-        Meeting Room Booking System
-      </a>
-      <div class="ml-auto">
-        <button class="btn btn-warning mx-2" onclick="createRoom()">
-          Create Meeting Room
+    <header>
+      <div class="logo">
+        <img src="../static/images/logo.png" alt="HSBC Logo" />
+
+        <span>
+          <h5>Meeting Room Booking System</h5>
+        </span>
+      </div>
+
+      <nav class="top-nav">
+        <button class="top-button" onclick="window.location.href='#'">
+          Create Meeting Rooms
         </button>
-        <button class="btn btn-warning mx-2" onclick="editRooms()">
+
+        <button class="top-button" onclick="window.location.href='#'">
           Edit Rooms
         </button>
-        <button class="btn btn-warning mx-2" onclick="seeUsers()">
+
+        <button class="top-button" onclick="window.location.href='#'">
           See Users
         </button>
-        <button class="btn btn-outline-dark mx-2">
-          <i class="fas fa-user-circle"></i>
-        </button>
-      </div>
-    </nav>
+
+        <div class="profile-icon">
+          <img src="../static/images/user-icon.png" alt="Profile Icon" />
+        </div>
+      </nav>
+    </header>
 
     <!-- Main Content -->
     <div class="container mt-5">

@@ -1,126 +1,219 @@
-
 /* Add space above the navbar */
 body {
-    padding-top: 0px;
-    margin-top: 0;
+  padding-top: 0px;
+  margin-top: 0;
 }
 
-/* Navbar styling */
-.navbar {
-    margin-top: 0px; /* Additional margin if necessary */
-    padding: 10px 0;  /* Padding within the navbar */
-    background-color: #FADFCB; /* Updated background color */
+header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 20px;
+
+  background-color: #fde5d4;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+
+  margin-right: 10px;
+}
+
+.logo span {
+  font-weight: bold;
+
+  font-size: 18px;
+}
+
+.top-nav {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.top-button {
+  background-color: #fff;
+
+  color: #ff8c00;
+
+  padding: 8px 16px;
+
+  border: 2px solid #ff8c00;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.top-button:hover {
+  background-color: #ff8c00;
+
+  color: #fff;
+}
+
+.profile-icon img {
+  height: 40px;
+
+  border-radius: 50%;
+
+  border: 2px solid #000;
 }
 
 /* Background elements */
 .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
-.circle, .square {
-    position: absolute;
-    background: rgba(255, 165, 0, 0.2); /* Light orange for background shapes */
+.circle,
+.square {
+  position: absolute;
+  background: rgba(255, 165, 0, 0.2); /* Light orange for background shapes */
 }
 
 .circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .square {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Adjust the positions and sizes of the dynamic elements */
 .circle:nth-child(1) {
-    width: 300px;
-    height: 300px;
-    top: 10%;
-    left: 15%;
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 15%;
 }
 
 .circle:nth-child(2) {
-    width: 200px;
-    height: 200px;
-    bottom: 20%;
-    right: 20%;
+  width: 200px;
+  height: 200px;
+  bottom: 20%;
+  right: 20%;
 }
 
 .square:nth-child(3) {
-    width: 250px;
-    height: 250px;
-    top: 50%;
-    right: 10%;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  right: 10%;
 }
 
 .square:nth-child(4) {
-    width: 150px;
-    height: 150px;
-    bottom: 10%;
-    left: 25%;
+  width: 150px;
+  height: 150px;
+  bottom: 10%;
+  left: 25%;
 }
 
 /* Styling for tilted square around the image */
 
-
 .tilted-square {
-    position: relative;
-    width: 70%;  /* Adjusted to make the square smaller */
-    padding-bottom: 70%; /* Keeps it a square */
-    background-color: #f0f0f0;
-    transform: rotate(45deg); /* Rotate the square */
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 15px; /* Center the square */
+  position: relative;
+  width: 70%; /* Adjusted to make the square smaller */
+  padding-bottom: 70%; /* Keeps it a square */
+  background-color: #f0f0f0;
+  transform: rotate(45deg); /* Rotate the square */
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 15px; /* Center the square */
 }
-
 
 /* Image within the tilted square */
 .admin-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the image back */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the image back */
 }
 
 /* Welcome text styling */
 .welcome-text {
-    color: #ff6600; /* Orange color */
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: #ff6600; /* Orange color */
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
-    .tilted-square {
-        width: 50%;  /* Make the tilted square smaller on mobile */
-        padding-bottom: 50%; /* Keeps it a square */
-        transform: rotate(45deg); /* Maintain rotation */
-        margin: 0 auto; /* Center the square */
-    }
+  .tilted-square {
+    width: 50%; /* Make the tilted square smaller on mobile */
+    padding-bottom: 50%; /* Keeps it a square */
+    transform: rotate(45deg); /* Maintain rotation */
+    margin: 0 auto; /* Center the square */
+  }
 
-    .admin-image {
-        width: 90%;  /* Adjust the image size within the square */
-        height: 90%;
-        transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the image back */
-    }
+  .admin-image {
+    width: 90%; /* Adjust the image size within the square */
+    height: 90%;
+    transform: translate(-50%, -50%) rotate(-45deg); /* Rotate the image back */
+  }
+  .logo {
+    width: 70%;
+  }
 
-    /* Additional margin to avoid overlapping with the navbar */
-    .navbar {
-        margin-bottom: 20px;
-    }
+  .logo img {
+    height: 50px;
+
+    margin-right: 20px;
+  }
+
+  .logo span h5 {
+    font-weight: bold;
+
+    font-size: 14px;
+  }
+
+  .top-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+  }
+
+  .top-button {
+    background-color: #fff;
+    font-size: 10px;
+    color: #ff8c00;
+
+    padding: 4px 8px;
+
+    border: 2px solid #ff8c00;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+  }
 }

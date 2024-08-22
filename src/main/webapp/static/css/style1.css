@@ -477,3 +477,63 @@ body {
 
   margin-top: 3rem;
 }
+/* Clearfix hack for containers */
+.container::after,
+.container1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Flexbox for Forms and Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes the full height of the viewport */
+}
+
+.container1 {
+  display: flex;
+  flex: 1; /* Take up available space */
+  flex-wrap: wrap;
+}
+
+/* Ensure forms stay aligned and do not collapse */
+.left-side,
+.right-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between room forms */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 0px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Ensure the footer doesn't overlap content */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-bottom: 150px; /* Adjust this value as needed */
+}
+footer {
+  background-color: #f1f1f1; /* Example styling */
+}

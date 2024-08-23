@@ -38,6 +38,58 @@
       </nav>
     </header>
 
+    <div class="BookingHeader">
+      <div class="manageWelcomeContainer">
+        <h1>Create a New Meeting Room with Ease!</h1>
+        <div class="manager-content">
+          <div class="manager-description">
+            <p>
+              As an administrator, you have the ability to create and manage
+              meeting rooms tailored to your organization's needs. By providing
+              key details and selecting the right amenities, you can ensure that
+              every meeting has the perfect environment.
+            </p>
+            <p><strong>Here's how to fill out the form:</strong></p>
+            <ul>
+              <li>
+                <strong>Room Name:</strong> Enter a unique name for the meeting
+                room. This helps everyone easily identify and select the room
+                during booking.
+              </li>
+              <li>
+                <strong>Location:</strong> Specify the room's location within
+                the building. Include the floor number or any specific details
+                to help users find the room effortlessly.
+              </li>
+              <li>
+                <strong>Capacity:</strong> Indicate the maximum number of people
+                the room can accommodate. This ensures that the room is booked
+                for meetings of appropriate size.
+              </li>
+              <li>
+                <strong>Amenities:</strong> Check the amenities available in the
+                room and assign credits for each. Amenities like a whiteboard,
+                projector, or coffee machine can enhance the meeting experience.
+                Specify the credit cost for each amenity to manage resource
+                allocation effectively.
+              </li>
+              <li>
+                <strong>Create Room:</strong> Once all fields are filled out,
+                click the "Create Room" button to finalize and save the room
+                details. Make sure all information is correct before submitting.
+              </li>
+            </ul>
+            <p>
+              This form allows you to set up rooms that meet your team's
+              specific needs, ensuring that every meeting is productive and
+              well-equipped. Take a moment to review the details before creating
+              the room.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="booking-form">
       <div class="form-container">
         <div class="form-group">
@@ -89,9 +141,6 @@
           Create Room
         </button>
       </div>
-      <div class="notification">
-        <span>Room Created</span>
-      </div>
     </section>
 
     <!-- Footer Section -->
@@ -128,33 +177,7 @@
         </ul>
       </div>
     </footer>
-    <script>
-      document
-        .querySelector(".create-room-btn")
-        .addEventListener("click", function () {
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const amenitiesGroups = document.querySelectorAll(".amenities-group");
-
-        amenitiesGroups.forEach((group) => {
-          const checkbox = group.querySelector('input[type="checkbox"]');
-          const textInput = group.querySelector('input[type="text"]');
-
-          // Initially disable the text input
-          textInput.disabled = true;
-
-          // Add event listener to enable/disable the text input based on checkbox
-          checkbox.addEventListener("change", function () {
-            if (checkbox.checked) {
-              textInput.disabled = false;
-              textInput.placeholder = "Enter Credits";
-            } else {
-              textInput.disabled = true;
-              textInput.placeholder = "";
-              textInput.value = ""; // Clear the value if unchecked
-            }
-          });
-        });
-    </script>
+    <script src="../static/js/AdminCreateRoom.js"></script>
   </body>
 </html>

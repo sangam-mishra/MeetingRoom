@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Room Booking System</title>
-    <link rel="stylesheet" href="../static/css/ManagerDashboard.css" />
+    <link rel="stylesheet" href="../static/css/MemberPage.css" />
     <link rel="stylesheet" href="../static/css/StaticCSS.css" />
   </head>
   <body>
@@ -32,38 +32,45 @@
       </nav>
     </header>
 
-    <main>
-      <section class="meetings">
-        <h2>Your Scheduled Meetings</h2>
-        <div class="meeting">
-          <div class="meeting-details">
-            <p><strong>Today</strong></p>
-            <p class="time">01:00 → 02:00 PM</p>
-            <p class="organizer"><strong>Organizer:</strong> Uday Singh</p>
+
+    <main class="MemberPageHome">
+       <section class="meetings">
+          <h2>Your Scheduled Meetings</h2>
+          <hr class="custom-hr" />
+          <div class="meetings-container">
+            <div class="container" id="meetings-container">
+              <!-- Meeting items will be dynamically added here by JavaScript -->
+            </div>
           </div>
-          <div class="venue">
-            <p><strong>Venue</strong></p>
-            <p>Conference Room<br />P1 Floor</p>
-            <img src="conference-room.png" alt="Conference Room" />
-          </div>
-        </div>
-        <div class="meeting">
-          <div class="meeting-details">
-            <p><strong>Today</strong></p>
-            <p class="time">04:00 → 04:30 PM</p>
-            <p class="organizer"><strong>Organizer:</strong> Mrigank Shekhar</p>
-          </div>
-          <div class="venue">
-            <p><strong>Venue</strong></p>
-            <p>Projector Room<br />3rd Floor</p>
-            <img src="projector-room.png" alt="Projector Room" />
-          </div>
-        </div>
       </section>
-      <section class="meeting-room">
-        <img src="meeting-room.png" alt="Meeting Room" />
+        <section class="meeting-room-display">
+          <img src="../static/images/meeting-room.png" alt="Meeting Room" />
+
+                <section class="member-welcome">
+                <div class="member-welcome-container">
+                    <h1>WELCOME, Member!</h1>
+                    <p>View Your Scheduled Meetings</p>
+                    <div class="member-content">
+                        <p>
+                            As a member, you can easily view your upcoming meetings and stay organized.
+                            Check the schedule to keep track of all your appointments and make adjustments as needed.
+                        </p>
+                        <p><strong>What you can do:</strong></p>
+                        <ul>
+                            <li>
+                                <strong>View Meetings:</strong> See a list of all your scheduled meetings.
+                            </li>
+                            <li>
+                                <strong>Manage Appointments:</strong> Review details and make changes if required.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </section>
+
       </section>
-    </main>
+
+  </main>
 
     <!-- Footer Section -->
     <footer>
@@ -99,5 +106,7 @@
         </ul>
       </div>
     </footer>
+        <script src="../static/js/MemberPage.js" defer></script>
+
   </body>
 </html>

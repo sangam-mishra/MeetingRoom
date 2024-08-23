@@ -1,60 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #fdf1e0;
-  color: #333;
-}
-
-header {
-  background-color: #f8d7b7;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-btn {
-  background-color: #ffa94d;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 15px;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.nav-btn:hover {
-  background-color: #ff8c00;
-}
-
-.user-icon img {
-  height: 40px;
-  margin-left: 20px;
-}
-
 .booking-form {
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 20px;
   max-width: 700px;
   background-color: #ffddc1;
@@ -65,6 +10,8 @@ nav {
 .form-container {
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .form-group {
@@ -144,4 +91,28 @@ nav {
 
 .notification span {
   color: #333;
+}
+@media (max-width: 768px) {
+  .booking-form {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+/* --------BookingHeader---------- */
+.BookingHeader {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  font-family: sans-serif;
+  margin-left: 6%;
+}
+.BookingHeader h1 {
+  width: 80%;
+  color: #c76d00;
+}
+.BookingHeader strong {
+  color: #c76d00;
 }

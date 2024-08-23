@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Room Booking System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../static/css/importUsersstyle.css" />
     <link rel="stylesheet" href="../static/css/StaticCSS.css" />
   </head>
@@ -37,111 +41,15 @@
       </nav>
     </header>
 
-    <div class="search-container">
-      <div class="search-box">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" placeholder="Search User" />
-      </div>
-      <button class="search-button" onclick="searchUser()">Search</button>
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search User" />
     </div>
-
-    <div class="user-list">
-      <div class="user-item">
-        <div class="user-info">
-          <div class="user-icon"></div>
-          <div class="user-details">
-            <div class="user-header">
-              <p><strong>Name</strong></p>
-              <p><strong>Role</strong></p>
-              <p><strong>Email</strong></p>
-              <p><strong>Phone Number</strong></p>
-            </div>
-            <div class="user-values">
-              <p>Ridhanhu</p>
-              <p>Admin</p>
-              <p>help@hsbc.support.com</p>
-              <p>+1 (201) 895-3801</p>
-            </div>
-          </div>
-        </div>
+    <main>
+      <div id="userTable" class="user-table">
+        <!-- User data will be populated here -->
       </div>
-      <div class="user-item">
-        <div class="user-info">
-          <div class="user-icon"></div>
-          <div class="user-details">
-            <div class="user-header">
-              <p><strong>Name</strong></p>
-              <p><strong>Role</strong></p>
-              <p><strong>Email</strong></p>
-              <p><strong>Phone Number</strong></p>
-            </div>
-            <div class="user-values">
-              <p>Jai</p>
-              <p>Manager</p>
-              <p>help@hsbc.support.com</p>
-              <p>+1 (201) 895-3801</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="user-item">
-        <div class="user-info">
-          <div class="user-icon"></div>
-          <div class="user-details">
-            <div class="user-header">
-              <p><strong>Name</strong></p>
-              <p><strong>Role</strong></p>
-              <p><strong>Email</strong></p>
-              <p><strong>Phone Number</strong></p>
-            </div>
-            <div class="user-values">
-              <p>Karamveer</p>
-              <p>Manager</p>
-              <p>help@hsbc.support.com</p>
-              <p>+1 (201) 895-3801</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="user-item">
-        <div class="user-info">
-          <div class="user-icon"></div>
-          <div class="user-details">
-            <div class="user-header">
-              <p><strong>Name</strong></p>
-              <p><strong>Role</strong></p>
-              <p><strong>Email</strong></p>
-              <p><strong>Phone Number</strong></p>
-            </div>
-            <div class="user-values">
-              <p>Riddhika</p>
-              <p>Member</p>
-              <p>help@hsbc.support.com</p>
-              <p>+1 (201) 895-3801</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="user-item">
-        <div class="user-info">
-          <div class="user-icon"></div>
-          <div class="user-details">
-            <div class="user-header">
-              <p><strong>Name</strong></p>
-              <p><strong>Role</strong></p>
-              <p><strong>Email</strong></p>
-              <p><strong>Phone Number</strong></p>
-            </div>
-            <div class="user-values">
-              <p>Darpan</p>
-              <p>Member</p>
-              <p>help@hsbc.support.com</p>
-              <p>+1 (201) 895-3801</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </main>
 
     <!-- Footer Section -->
     <footer>

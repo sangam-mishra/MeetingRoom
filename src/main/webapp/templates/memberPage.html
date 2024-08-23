@@ -4,19 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meeting Room Booking System</title>
-    <link rel="stylesheet" href="../static/css/styles.css" />
-    <link rel="stylesheet" href="../static/css/Footer.css" />
+    <link rel="stylesheet" href="../static/css/ManagerDashboard.css" />
+    <link rel="stylesheet" href="../static/css/StaticCSS.css" />
   </head>
   <body>
+    <!-- Dynamic Background Elements -->
+    <div class="background">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+
     <header>
       <div class="logo">
-        <img src="logo.png" alt="HSBC Logo" />
+        <img src="../static/images/logo.png" alt="HSBC Logo" />
+        <span>Meeting Room Booking System</span>
       </div>
-      <div class="user-profile">
-        <button>See Users</button>
-        <img src="user-icon.png" alt="User Icon" />
-      </div>
+      <nav class="top-nav">
+        <button class="top-button" onclick="window.location.href='#'">
+          See Users
+        </button>
+          <div class="profile-icon">
+            <img src="../static/images/user-icon.png" alt="Profile Icon" />
+          </div>
+        </button>
+      </nav>
     </header>
+
     <main>
       <section class="meetings">
         <h2>Your Scheduled Meetings</h2>

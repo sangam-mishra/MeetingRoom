@@ -236,3 +236,12 @@ footer {
 .footer-links a:hover {
   text-decoration: underline;
 }
+/* Make sure aside is displayed as a block below the header */
+aside.user-info {
+  display: none; /* Hide by default */
+  background-color: #fde5d4; /* Match the navbar background or any color you like */
+  padding: 15px;
+  margin-top: 10px; /* Create some space below the navbar */
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}

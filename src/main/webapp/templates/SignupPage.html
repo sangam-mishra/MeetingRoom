@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="../static/css/SignUpPage.css" />
+    <link rel="stylesheet" href="../static/css/StaticCSS.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../static/images/logo.png" alt="HSBC Logo" />
+        <span>Meeting Room Booking System</span>
+      </div>
+      <nav class="top-nav">
+        <button
+          class="top-button login-button"
+          onclick="window.location.href='../templates/LoginPage.html'"
+        >
+          Login
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="signup-container">
+        <div class="signup-form">
+          <h1 class="signup-heading">Be one of us!</h1>
+          <form id="signupForm">
+            <h2 class="form-title">Sign Up</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+            />
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="userType">User Type</label>
+            <select id="userType" name="userType" required>
+              <option value="manager">Manager</option>
+              <option value="member">Member</option>
+            </select>
+
+            <label>
+              <input
+                type="checkbox"
+                id="termsandcondition"
+                name="terms"
+                required
+              />
+              <span
+                >Hereby, I agree to the <a href="#">Terms & Condition</a> and
+                <a href="#">Privacy Policy</a></span
+              >
+            </label>
+
+            <button type="submit">Register</button>
+          </form>
+
+          <p class="login-link">
+            Already have an account? <a href="LoginPage.html">Login Now</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-text">
+          <div class="tagline">
+            <h2>Easily Find and Book the Most</h2>
+            <h2>Suitable Meeting Space</h2>
+          </div>
+          <div class="footer-contact">
+            <div class="footer-email">
+              <label>Email</label>
+              <p>help@hsbc.support.com</p>
+            </div>
+            <div class="footer-phone">
+              <label>Phone Number</label>
+              <p>+1 (201) 895-3801</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-buttons">
+          <button class="contact-btn">Contact Us</button>
+          <button class="demo-btn">Watch Demo</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 HSBC TECHNOLOGY | All rights reserved</p>
+        <ul class="footer-links">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../static/js/SignupPage.js"></script>
+  </body>
+</html>

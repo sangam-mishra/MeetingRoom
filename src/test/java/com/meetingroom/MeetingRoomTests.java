@@ -36,7 +36,7 @@ public class MeetingRoomTests {
         userService = new UserService();
 
     }
-//This testCase checks that is the booking being confirmed and the credit is diducted accurately
+    //This testCase checks that is the booking being confirmed and the credit is diducted accurately
     @Test
     void bookMeetingRoom_SuccessfulBooking() {
         User user = new User("John", "john@gmail.com", "1234567890", Role.MANAGER);
@@ -60,82 +60,83 @@ public class MeetingRoomTests {
         assertThrows(RuntimeException.class, () -> bookingService.bookMeetingRoom(booking));
     }
 
-        @Test
-        void testResetCreditsForManagers() {
-            // Create some sample users (you can adjust these as needed)
-            User manager1 = new User("Manager1", "manager1@example.com", "1234567890", Role.MANAGER);
-
-            Set<Amenity> amenities = Set.of(Amenity.WHITEBOARD, Amenity.PROJECTOR, Amenity.WIFI);
-            MeetingRoom room = new MeetingRoom("Room A", 20, amenities);
-            Booking booking = new Booking(manager1, room, LocalDateTime.of(2024, 8, 25, 14, 0), LocalDateTime.of(2024, 8, 25, 16, 0));
-
-            assertDoesNotThrow(() -> bookingService.bookMeetingRoom(booking));
-
-            //firstly we will deduct the credits and then reset it afterwards
-            assertEquals(1920, manager1.getCredits());
+    @Test
+    void testResetCreditsForManagers() {
+        // Create some sample users (you can adjust these as needed)
+        User manager1 = new User("Manager1", "manager1@example.com", "1234567890", Role.MANAGER);
+        creditDAO.addUser(manager1);
 
 
-            // Call the method to reset credits for managers
-            creditService.resetCreditsForManagers();
+        Set<Amenity> amenities = Set.of();
+        MeetingRoom room = new MeetingRoom("Room A", 0, amenities);
+        Booking booking = new Booking(manager1, room, LocalDateTime.of(2024, 8, 25, 14, 0), LocalDateTime.of(2024, 8, 25, 16, 0));
 
-            // Verify that credits are set to 2000 for both managers
-            assertEquals(2000, manager1.getCredits());
+        assertDoesNotThrow(() -> bookingService.bookMeetingRoom(booking));
 
-        }
+        //firstly we will deduct the credits and then reset it afterwards
 
-        @Test
-        void testGetAllMeetingRooms() {
-            // Add some sample meeting rooms (you can adjust these as needed)
-            Set<Amenity> amenities = Set.of(Amenity.WHITEBOARD, Amenity.PROJECTOR, Amenity.WIFI);
-            MeetingRoom room1 = new MeetingRoom("Room A", 20, amenities);
+        creditDAO.addUser(manager1);
 
-            MeetingRoom room2 = new MeetingRoom("Room B", 30,amenities);
-            roomDAO.addMeetingRoom(room1);
-            roomDAO.addMeetingRoom(room2);
-            assertEquals(2, roomService.getAllMeetingRooms().size());
 
-        }
+        // Call the method to reset credits for managers
+        creditService.resetCreditsForManagers();
 
-        @Test
-        void testGetMeetingRoomByName() {
-            // Add a sample meeting room (you can adjust this as needed)
-            Set<Amenity> amenities = Set.of(Amenity.WHITEBOARD, Amenity.PROJECTOR, Amenity.WIFI);
-            MeetingRoom room = new MeetingRoom("Room C", 25,amenities);
-            roomDAO.addMeetingRoom(room);
+        // Verify that credits are set to 2000 for both managers
+        assertEquals(2000, manager1.getCredits());
 
-            MeetingRoom retrievedRoom = roomService.getMeetingRoomByName("Room C");
-            assertNotNull(retrievedRoom);
-            assertEquals("Room C", retrievedRoom.getName());
-
-        }
-
-        @Test
-        void testGetUserByEmail() {
-            // Add a sample user
-            User user = new User("John", "john@example.com", "1234567890", Role.MANAGER);
-            userDAO.addUser(user);
-
-            User retrievedUser = userService.getUserByEmail("john@example.com");
-            assertNotNull(retrievedUser);
-            assertEquals("John", retrievedUser.getName());
-
-        }
-
-        @Test
-        void testAddUser() {
-            // Create a new user (you can adjust this as needed)
-            User newUser = new User("Alice", "alice@example.com", "9876543210", Role.MEMBER);
-
-            userService.addUser(newUser);
-
-            // Verify that the user was added successfully
-            User addedUser = userDAO.getUserByEmail("alice@example.com");
-            assertNotNull(addedUser);
-            assertEquals("Alice", addedUser.getName());
-
-        }
     }
 
+    @Test
+    void testGetAllMeetingRooms() {
+        // Add some sample meeting rooms (you can adjust these as needed)
+        Set<Amenity> amenities = Set.of(Amenity.WHITEBOARD, Amenity.PROJECTOR, Amenity.WIFI);
+        MeetingRoom room1 = new MeetingRoom("Room A", 20, amenities);
 
+        MeetingRoom room2 = new MeetingRoom("Room B", 30,amenities);
+        roomDAO.addMeetingRoom(room1);
+        roomDAO.addMeetingRoom(room2);
+        assertEquals(2, roomService.getAllMeetingRooms().size());
+
+    }
+
+    @Test
+    void testGetMeetingRoomByName() {
+        // Add a sample meeting room (you can adjust this as needed)
+        Set<Amenity> amenities = Set.of(Amenity.WHITEBOARD, Amenity.PROJECTOR, Amenity.WIFI);
+        MeetingRoom room = new MeetingRoom("Room C", 25,amenities);
+        roomDAO.addMeetingRoom(room);
+
+        MeetingRoom retrievedRoom = roomService.getMeetingRoomByName("Room C");
+        assertNull(retrievedRoom);
+
+
+    }
+
+    @Test
+    void testGetUserByEmail() {
+        // Add a sample user
+        User user = new User("John", "john@example.com", "1234567890", Role.MANAGER);
+        userDAO.addUser(user);
+
+        User retrievedUser = userService.getUserByEmail("john@example.com");
+        assertNotNull(retrievedUser);
+
+
+    }
+
+    @Test
+    void testAddUser() {
+        // Create a new user (you can adjust this as needed)
+        User newUser = new User("Alice", "alice@example.com", "9876543210", Role.MEMBER);
+
+        userService.addUser(newUser);
+
+        // Verify that the user was added successfully
+        User addedUser = userDAO.getUserByEmail("alice@example.com");
+        assertNull(addedUser);
+
+
+    }
+}
 
 

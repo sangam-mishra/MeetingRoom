@@ -56,8 +56,5 @@ The Automated Meeting Room Booking System is a web application designed to facil
 1.	Admins: Configure rooms, manage amenities, and import users via JSON.
 2.	Managers: Schedule meetings, book rooms, and monitor credit usage.
 3.	Members: Access meeting schedules and view room availability.
-   
-### License
-This project is licensed under the MIT License. See the LICENSE file for more details.
 
 

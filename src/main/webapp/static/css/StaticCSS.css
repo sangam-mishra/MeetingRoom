@@ -1,5 +1,6 @@
+/* Reset and body styles */
 * {
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 body {
@@ -8,206 +9,73 @@ body {
   background-color: #f5f5f5;
 }
 
+/* Header and navigation styles */
 header {
-  background-color: #f8d7b7;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-btn {
-  background-color: #ffa94d;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 15px;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.nav-btn:hover {
-  background-color: #ff8c00;
-}
-
-.user-icon img {
-  height: 40px;
-  margin-left: 20px;
-}
-/* 
-------------------------------- */
-
-header {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 15px 20px;
-
   background-color: #fde5d4;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   display: flex;
-
   align-items: center;
 }
 
 .logo img {
   height: 50px;
-
   margin-right: 10px;
 }
 
 .logo span {
   font-weight: bold;
-
   font-size: 18px;
 }
 
 .top-nav {
   display: flex;
-
   align-items: center;
-
   gap: 10px;
 }
 
 .top-button {
   background-color: #fff;
-
   color: #ff8c00;
-
   padding: 8px 16px;
-
   border: 2px solid #ff8c00;
-
   border-radius: 20px;
-
   cursor: pointer;
-
-  font-weight: bold;
-}
-
-.top-button1 {
-  background-color: #fde5d4;
-
-  color: #ff8c00;
-
-  padding: 8px 16px;
-
-  border: 0px solid #ff8c00;
-
-  border-radius: 20px;
-
-  cursor: pointer;
-
   font-weight: bold;
 }
 
 .top-button:hover {
   background-color: #ff8c00;
-
   color: #fff;
+}
+
+.profile-icon {
+  cursor: pointer;
 }
 
 .profile-icon img {
   height: 40px;
-
   border-radius: 50%;
-
   border: 2px solid #000;
 }
-/* 
------------------------------- */
 
-header {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  padding: 15px 20px;
-
-  background-color: #fde5d4;
-}
-
-.logo {
-  display: flex;
-
-  align-items: center;
-}
-
-.logo img {
-  height: 50px;
-
-  margin-right: 10px;
-}
-
-.logo span {
-  font-weight: bold;
-
-  font-size: 18px;
-}
-
-.top-nav {
-  display: flex;
-
-  align-items: center;
-
-  gap: 10px;
-}
-
-.top-button {
+/* User info section below navbar */
+.user-info {
+  display: none; /* Hide the user-info section by default */
   background-color: #fff;
-
-  color: #ff8c00;
-
-  padding: 8px 16px;
-
-  border: 2px solid #ff8c00;
-
-  border-radius: 20px;
-
-  cursor: pointer;
-
-  font-weight: bold;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  position: absolute; /* Position it relatively to the header */
+  right: 20px; /* Align it to the right, just below the profile icon */
+  z-index: 1000; /* Ensure it stays on top of other content */
 }
-
-.top-button:hover {
-  background-color: #ff8c00;
-
-  color: #fff;
-}
-
-.profile-icon img {
-  height: 40px;
-
-  border-radius: 50%;
-
-  border: 2px solid #000;
-}
-
-/* -------------------------------------------- */
 
 /* Background elements */
 .background {
@@ -263,7 +131,7 @@ header {
   left: 25%;
 }
 
-/* ---------footer------------ */
+/* Footer styles */
 footer {
   margin-top: 50px;
   background-color: #fff;
@@ -278,6 +146,7 @@ footer {
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
+
 .footer-text {
   display: flex;
   flex-wrap: wrap;
@@ -288,6 +157,7 @@ footer {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .footer-text .tag {
   margin-bottom: 50px;
   margin-left: 30px;

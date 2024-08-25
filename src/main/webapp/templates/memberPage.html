@@ -22,55 +22,73 @@
         <span>Meeting Room Booking System</span>
       </div>
       <nav class="top-nav">
-        <button class="top-button" onclick="window.location.href='#'">
+        <button
+          class="top-button"
+          onclick="window.location.href='../templates/importUsers.html'"
+        >
           See Users
         </button>
-          <div class="profile-icon">
-            <img src="../static/images/user-icon.png" alt="Profile Icon" />
-          </div>
-        </button>
+        <div class="profile-icon" id="profile-icon">
+          <img src="../static/images/user-icon.png" alt="Profile Icon" />
+        </div>
       </nav>
     </header>
 
+    <aside class="user-info" id="user-info">
+      <h2><b>Hi Admin!</b></h2>
+      <h3>
+        <b>Credit : <span class="credit">1520</span></b>
+      </h3>
+      <h3>
+        <b
+          >Note:
+          <span class="note"
+            >Your Credits will get renewed on Upcoming Monday</span
+          ></b
+        >
+      </h3>
+      <button><b>Logout</b></button>
+    </aside>
 
     <main class="MemberPageHome">
-       <section class="meetings">
-          <h2>Your Scheduled Meetings</h2>
-          <hr class="custom-hr" />
-          <div class="meetings-container">
-            <div class="container" id="meetings-container">
-              <!-- Meeting items will be dynamically added here by JavaScript -->
+      <section class="meetings">
+        <h2>Your Scheduled Meetings</h2>
+        <hr class="custom-hr" />
+        <div class="meetings-container">
+          <div class="container" id="meetings-container">
+            <!-- Meeting items will be dynamically added here by JavaScript -->
+          </div>
+        </div>
+      </section>
+      <section class="meeting-room-display">
+        <img src="../static/images/meeting-room.png" alt="Meeting Room" />
+
+        <section class="member-welcome">
+          <div class="member-welcome-container">
+            <h1>WELCOME, Member!</h1>
+            <p>View Your Scheduled Meetings</p>
+            <div class="member-content">
+              <p>
+                As a member, you can easily view your upcoming meetings and stay
+                organized. Check the schedule to keep track of all your
+                appointments and make adjustments as needed.
+              </p>
+              <p><strong>What you can do:</strong></p>
+              <ul>
+                <li>
+                  <strong>View Meetings:</strong> See a list of all your
+                  scheduled meetings.
+                </li>
+                <li>
+                  <strong>Manage Appointments:</strong> Review details and make
+                  changes if required.
+                </li>
+              </ul>
             </div>
           </div>
+        </section>
       </section>
-        <section class="meeting-room-display">
-          <img src="../static/images/meeting-room.png" alt="Meeting Room" />
-
-                <section class="member-welcome">
-                <div class="member-welcome-container">
-                    <h1>WELCOME, Member!</h1>
-                    <p>View Your Scheduled Meetings</p>
-                    <div class="member-content">
-                        <p>
-                            As a member, you can easily view your upcoming meetings and stay organized.
-                            Check the schedule to keep track of all your appointments and make adjustments as needed.
-                        </p>
-                        <p><strong>What you can do:</strong></p>
-                        <ul>
-                            <li>
-                                <strong>View Meetings:</strong> See a list of all your scheduled meetings.
-                            </li>
-                            <li>
-                                <strong>Manage Appointments:</strong> Review details and make changes if required.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-              </section>
-
-      </section>
-
-  </main>
+    </main>
 
     <!-- Footer Section -->
     <footer>
@@ -106,7 +124,21 @@
         </ul>
       </div>
     </footer>
-        <script src="../static/js/MemberPage.js" defer></script>
-
+    <script src="../static/js/MemberPage.js" defer></script>
+    <script>
+      document
+        .getElementById("profile-icon")
+        .addEventListener("click", function () {
+          const userInfo = document.getElementById("user-info");
+          if (
+            userInfo.style.display === "none" ||
+            userInfo.style.display === ""
+          ) {
+            userInfo.style.display = "block"; // Show the user-info section
+          } else {
+            userInfo.style.display = "none"; // Hide the user-info section
+          }
+        });
+    </script>
   </body>
 </html>

@@ -22,19 +22,32 @@
         <span>Meeting Room Booking System</span>
       </div>
       <nav class="top-nav">
-        <button class="top-button" onclick="window.location.href='#'">
+        <button class="top-button" onclick="window.location.href='../templates/ManagerOrganizeRoom.html'">
           Organize Meeting
         </button>
-        <button class="top-button" onclick="window.location.href='#'">
+        <button class="top-button" onclick="window.location.href='../templates/importUsers.html'">
           See Users
         </button>
-        <button class="top-button1" onclick="window.location.href='#'">
-          <div class="profile-icon">
-            <img src="../static/images/user-icon.png" alt="Profile Icon" />
-          </div>
-        </button>
+        <div class="profile-icon" id="profile-icon">
+          <img src="../static/images/user-icon.png" alt="Profile Icon" />
+        </div>
       </nav>
     </header>
+    <aside class="user-info" id="user-info">
+      <h2><b>Hi Admin!</b></h2>
+      <h3>
+        <b>Credit : <span class="credit">1520</span></b>
+      </h3>
+      <h3>
+        <b
+          >Note:
+          <span class="note"
+            >Your Credits will get renewed on Upcoming Monday</span
+          ></b
+        >
+      </h3>
+      <button><b>Logout</b></button>
+    </aside>
 
 <main>
       <section class="manager-welcome">
@@ -129,6 +142,21 @@
         </ul>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("profile-icon")
+        .addEventListener("click", function () {
+          const userInfo = document.getElementById("user-info");
+          if (
+            userInfo.style.display === "none" ||
+            userInfo.style.display === ""
+          ) {
+            userInfo.style.display = "block"; // Show the user-info section
+          } else {
+            userInfo.style.display = "none"; // Hide the user-info section
+          }
+        });
+    </script>
     <script src="../static/js/ManagerDashboard.js" defer></script>
   </body>
 </html>

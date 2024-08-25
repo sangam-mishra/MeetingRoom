@@ -20,8 +20,8 @@ The Automated Meeting Room Booking System is a web application designed to facil
 1.  Meeting Room Overview: Access details of room availability and scheduled meetings.
 2.  View Booked Rooms: Monitor booked room statuses and upcoming meetings.
 ## Credit Allocation System
-•	Room Booking Costs: Costs are calculated based on room capacity and selected amenities:
-•	Credit Reset Mechanism: Manager credits are automatically reset to 2000 every Monday at 6 AM.
+1.  Room Booking Costs: Costs are calculated based on room capacity and selected amenities:
+2.  Credit Reset Mechanism: Manager credits are automatically reset to 2000 every Monday at 6 AM.
 ## Mandatory Amenities by Meeting Type
 1.  Classroom Training: Requires Whiteboard and Projector
 2.	Online Training: Requires WiFi and Projector

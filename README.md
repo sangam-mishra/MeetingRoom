@@ -21,21 +21,9 @@ The Automated Meeting Room Booking System is a web application designed to facil
 2.  View Booked Rooms: Monitor booked room statuses and upcoming meetings.
 ## Credit Allocation System
 •	Room Booking Costs: Costs are calculated based on room capacity and selected amenities:
-### Seating Capacity:
-i) <=5: 0 Credits
-ii) >5 <=10: 10 Credits
-iii) >10: 20 Credits
-### Amenity Charges:
-i)	Projector: 5 Credits
-ii)	WiFi connection: 10 Credits
-iii)	Conference Call Facility: 15 Credits
-iv)	Whiteboard: 5 Credits
-v)	Water Dispenser: 5 Credits
-vi)	TV: 10 Credits
-vii)	Coffee Machine: 10 Credits
 •	Credit Reset Mechanism: Manager credits are automatically reset to 2000 every Monday at 6 AM.
 ## Mandatory Amenities by Meeting Type
-1   Classroom Training: Requires Whiteboard and Projector
+1.  Classroom Training: Requires Whiteboard and Projector
 2.	Online Training: Requires WiFi and Projector
 3.	Conference Calls: Requires Conference Call Facility
 4.	Business Meetings: Requires Projector
